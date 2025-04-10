@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Criação de Tabelas no HTML</h1>
+
+    <!--table é a tag principal para criar uma tabela-->
+    <table>
+        <tr>
+            <tr><!--<tr></tr> cria linhas dentro da tabela-->
+            <th>Coluna 1</th> <!--<th></th> Cria um cabeçalho na tabela-->
+            <th>Coluna 2</th>
+            <th>Coluna 3</th>
+        </tr>
+        <tr><!--<tr></tr> cria linhas dentro da tabela-->
+            <td>DADO 1</td><!--<td></td> cria colunas dentro da tr-->
+            <td>DADO 2</td>
+        </tr>
+        <tr>
+            <td>DADO 1</td>
+            <td>DADO 2</td>
+            <td>DADO 3</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2>Tabela com Cabeçalho</h2>
+    <table>
+        <thead><!--<thead></thead> Serve para organizar o cabeçalho da tabela-->
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody><!--<tbody></tbody> Serve para organizar o corpo da tabela-->
+            <tr>
+                <td>Lucas</td>
+                <td>21</td>
+                <td>Analista de Suporte</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>Tabelas com Céluas Personalizadas</h2>
+    <table border="1"> <!--border="1" atributo para inserir borda na tabela-->
+        <thead>
+            <tr>
+                <td colspan="2">Informações Pessoais</td> <!--colspan="2" significa que a célula tem o tamanho de duas colunas-->
+                <td>Contato</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nome:</td>
+                <td>Lucas</td>
+                <td rowspan="2">(11) 99999-9999</td> <!--rowspan="2" significa que a célula tem o tamanho de duas linhas-->
+            </tr>
+            <tr>
+                <td>Idade</td>
+                <td>21</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
